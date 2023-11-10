@@ -1,0 +1,11 @@
+---
+import FeelbackTaggedMessage from "../node_modules/astro-feelback/components/FeelbackYesNo.astro";
+import "astro-feelback/styles/feelback.css";
+
+const CONTENT_SET_ID = "892bf12e-e2e1-4767-9498-857e77739040";
+---
+
+<FeelbackTaggedMessage
+    contentSetId={CONTENT_SET_ID}
+    preset="like-dislike"
+/>
