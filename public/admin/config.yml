@@ -7,8 +7,8 @@ public_folder: '/images/uploads'
 
 collections: # A list of collections the CMS should be able to edit
   - name: 'projects' # Used in routes, ie.: /admin/collections/:slug/edit
-    label: 'Projects' # Used in the UI, ie.: "New Post"
-    folder: 'src/content/docs/projects' # The path to the folder where the documents are stored
+    label: 'Projects' # Used in the UI, ie.: "New Doc"
+    folder: '/src/content/docs/projects' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - { label: 'Title', name: 'title', widget: 'string' }
@@ -16,8 +16,18 @@ collections: # A list of collections the CMS should be able to edit
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
   - name: 'reference' # Used in routes, ie.: /admin/collections/:slug/edit
-    label: 'Reference' # Used in the UI, ie.: "New Post"
-    folder: 'src/content/docs/reference' # The path to the folder where the documents are stored
+    label: 'Reference' # Used in the UI, ie.: "New Doc"
+    folder: '/src/content/docs/reference' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+
+  - name: 'reference' # Used in routes, ie.: /admin/collections/:slug/edit
+    label: 'Reference' # Used in the UI, ie.: "New Doc"
+    folder: '/src/content/docs/learnHub' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - { label: 'Title', name: 'title', widget: 'string' }
