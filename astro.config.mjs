@@ -23,6 +23,11 @@ export default defineConfig({
       autogenerate: {
         directory: 'reference'
       }
+    },{
+      label: 'Learn Hub',
+      autogenerate: {
+        directory: 'learnHub'
+      }
     }]
   })]
 });
