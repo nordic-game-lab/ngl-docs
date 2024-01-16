@@ -5,71 +5,36 @@ description: This API endpoint allows you to retrieve user information based on
   key obtained from https://developers.learnhub.nordicgamelab.org as a Bearer
   Token in the Authorization header.
 ---
-
-
-
-
-
-
-
-
 **Endpoint:** `GET /v2/user`
 
-
-
-
-
 ## Request
-
-
-
-
 
 ### Headers
 
 - **Authorization:** Bearer `<Your_API_Key>`
 
-
-
-
-
 ### Query Parameters
 
 - **email (string):** The email address of the user to retrieve.
 
-
-
-
-
 #### Example:
 
 ```
-
 /v2/user?email=john.doe@example.com
-
 ```
 
-
-
-
+```
+curl --location 'https://api.nordicgamelab.org/v2/user?email=testuser%40test.com' \
+--header 'Authorization: Bearer <Your_API_Key>
+```
 
 ## Response
-
-
-
-
 
 ### Success (HTTP 200 OK)
 
 - **id (string):** The unique identifier for the user.
-
 - **name (string):** The name of the user.
-
 - **email (string):** The email address of the user.
-
-
-
-
 
 #### Example:
 
@@ -82,19 +47,10 @@ description: This API endpoint allows you to retrieve user information based on
 
 ```
 
-
-
-
-
 ### Error Responses
 
 - **HTTP 401 Unauthorized:** If the Bearer Token is missing or invalid.
-
 - **HTTP 400 Bad Request:** If the `email` query parameter is missing.
-
-
-
-
 
 #### Example:
 
@@ -110,16 +66,8 @@ description: This API endpoint allows you to retrieve user information based on
 
 ```
 
-
-
-
-
 ## Security
 
 To obtain an API key (Bearer Token), please log in to [Developers LearnHub](https://developers.learnhub.nordicgamelab.org) and follow the instructions to generate your token.
-
-
-
-
 
 **Note:** Keep your API key confidential. Do not share it in public repositories or with unauthorized individuals.
