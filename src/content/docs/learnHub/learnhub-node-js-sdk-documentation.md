@@ -5,13 +5,6 @@ description: |+
   interact with LearnHub APIs in your Node.js applications. 
   This SDK is written in ES module format.
 ---
-## Overview
-
-
-
-
-
-
 
 
 

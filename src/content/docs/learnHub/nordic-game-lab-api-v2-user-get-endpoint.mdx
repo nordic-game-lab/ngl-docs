@@ -5,6 +5,8 @@ description: This API endpoint allows you to retrieve user information based on
   key obtained from https://developers.learnhub.nordicgamelab.org as a Bearer
   Token in the Authorization header.
 ---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
 **Endpoint:** `GET /v2/user`
 
 ## Request
@@ -22,11 +24,27 @@ description: This API endpoint allows you to retrieve user information based on
 ```
 /v2/user?email=john.doe@example.com
 ```
+<Tabs>
+ <TabItem label="Curl">
+    ```
+    curl --location 'https://api.nordicgamelab.org/v2/user?email=testuser%40test.com' \
+    --header 'Authorization: Bearer {Your_API_Key}
+    ```
+  </TabItem>
+  <TabItem label="Node JS">
+    ```
+    import { Client } from '@nordic-game-lab/learnhub-api';
 
-```
-curl --location 'https://api.nordicgamelab.org/v2/user?email=testuser%40test.com' \
---header 'Authorization: Bearer <Your_API_Key>
-```
+    const apiKey = '<Your_API_Key>';
+
+    const learnHubClient = new Client(apiKey);
+
+    const user = await learnHubClient.getUser('testuser@test.com');
+
+    console.log(user);
+    ```
+  </TabItem>
+</Tabs>
 
 ## Response
 
