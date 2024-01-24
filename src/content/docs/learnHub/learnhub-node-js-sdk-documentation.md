@@ -17,9 +17,7 @@ To install the LearnHub Node.js SDK, use npm:
 
 
 ```bash
-
 npm install @nordic-game-lab/learnhub-api
-
 ```
 
 
@@ -34,11 +32,7 @@ instance by providing your API key.
 
 
 ```javascript
-
 import { Client } from '@nordic-game-lab/learnhub-api';
-
-
-
 
 
 const apiKey = '<Your_API_Key>';
@@ -88,11 +82,9 @@ const learnHubClient = new Client(apiKey);
 #### Example:
 
 ```javascript
-
 const user = await learnHubClient.getUser('john.doe@example.com');
 
 console.log(user);
-
 ```
 
 
@@ -108,7 +100,6 @@ The SDK uses Promises for asynchronous operations. Ensure to handle errors using
 
 
 ```javascript
-
 try {
 
   const user = await learnHubClient.getUserByEmail('john.doe@example.com');
@@ -120,7 +111,6 @@ try {
   console.error(error.message);
 
 }
-
 ```
 
 
@@ -135,7 +125,7 @@ Keep your API key confidential. Do not expose it in public repositories or share
 
 
 
-For more information on obtaining an API key, visit [LearnHub Developers](https://developers.learnhub.nordicgamelab.org).
+For obtaining an API key, visit [LearnHub Developers](https://developers.learnhub.nordicgamelab.org).
 
 
 

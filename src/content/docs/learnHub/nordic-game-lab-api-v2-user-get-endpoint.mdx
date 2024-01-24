@@ -5,6 +5,7 @@ description: This API endpoint allows you to retrieve user information based on
   key obtained from https://developers.learnhub.nordicgamelab.org as a Bearer
   Token in the Authorization header.
 ---
+
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 **Endpoint:** `GET /v2/user`
@@ -31,7 +32,7 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
     --header 'Authorization: Bearer {Your_API_Key}
     ```
   </TabItem>
-  <TabItem label="Node JS">
+  <TabItem label="Node JS SDK">
     ```
     import { Client } from '@nordic-game-lab/learnhub-api';
 
@@ -62,7 +63,6 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
   "name": "John Doe",
   "email": "john.doe@example.com"
 }
-
 ```
 
 ### Error Responses
@@ -73,7 +73,6 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 #### Example:
 
 ```
-
 {
 
   "error": "Unauthorized",
@@ -81,11 +80,10 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
   "message": "Invalid Bearer Token"
 
 }
-
 ```
 
 ## Security
 
-To obtain an API key (Bearer Token), please log in to [Developers LearnHub](https://developers.learnhub.nordicgamelab.org) and follow the instructions to generate your token.
+To obtain an API key (Bearer Token), please log in to [LearnHub Developers](https://developers.learnhub.nordicgamelab.org) and follow the instructions to generate your token.
 
 **Note:** Keep your API key confidential. Do not share it in public repositories or with unauthorized individuals.
