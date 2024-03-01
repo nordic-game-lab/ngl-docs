@@ -4,6 +4,7 @@ backend:
 
 media_folder: 'public/images/uploads' # Folder where user uploaded files should go
 public_folder: 'public/images/uploads'
+logo_url: 'https://static.nordicgamelab.org/nordic_game_lab_logos%2Flogo_white_background.svg'
 
 collections: # A list of collections the CMS should be able to edit
   - name: 'projects' # Used in routes, ie.: /admin/collections/:slug/edit
