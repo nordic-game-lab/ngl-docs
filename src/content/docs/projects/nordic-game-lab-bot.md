@@ -1,7 +1,7 @@
 ---
 title: Nordic Game Lab Bot
-description: "**NordicGameLabBot** is an efficient and versatile web crawler
-  designed by **Nordic Game Lab LLC**. Its primary purpose is to collect data
+description: "NordicGameLabBot is an efficient and versatile web crawler
+  designed by Nordic Game Lab LLC. Its primary purpose is to collect data
   from websites, analyze content, and provide valuable insights for various
   applications. Whether you're a developer, researcher, or data enthusiast, this
   documentation will guide you through the bot's features, usage, and best
@@ -56,61 +56,34 @@ description: "**NordicGameLabBot** is an efficient and versatile web crawler
         ```javascript
 
         module.exports = {
-
           toCrawlUrl: "https://www.nordicgamelab.org",
-
           urlInclude: "nordicgamelab.org",
-
           noCrawl: [
-
             "/cdn-cgi/",
-
             "account",
-
             "/callback",
-
             "/demo",
-
             "fresh",
-
             "/register",
-
             "mailto:",
-
             "tel:",
-
             "/search",
-
             "/login",
-
             "linkedin",
-
             "google",
-
             "facebook",
-
             "twitter",
-
             "instagram",
-
             "youtube",
-
             "reddit",
-
             "discord",
-
             "admin",
-
             "dribbble",
-
             "status",
-
             "link.nordicgamelab.org"
-
           ],
 
         };
-
         ```
 
 
@@ -130,11 +103,7 @@ description: "**NordicGameLabBot** is an efficient and versatile web crawler
     - Execute the following command to run the bot using `npx`:
 
 
-
-
-
         ```
-
         npx @nordic-game-lab/web-crawler@latest --config config.js
 
         ```
@@ -175,10 +144,7 @@ If you are a website owner and have identified that **NordicGameLabBot** has cra
 
 
 
-
-
     ```
-
     User-agent: NordicGameLabBot
 
     Disallow: /
@@ -190,8 +156,6 @@ If you are a website owner and have identified that **NordicGameLabBot** has cra
 
 
 3. If you have any specific requests or need further assistance, please contact us at **bots@nordicgamelab.org**.
-
-
 
 
 
